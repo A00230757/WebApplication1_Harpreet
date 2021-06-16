@@ -1,0 +1,41 @@
+﻿@page
+@model WebApplication1_Harpreet.Pages.IntroModel
+@{
+    ViewData["Title"] = "My Razor Page ";
+}
+<div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+    <p><a href="#">This is my newly created razor page</a>.</p>
+</div>
+
+<h3>
+    My Name is Harpreet singh
+</h3>
+
+<form method="get">
+    <input name="firstNumber" type="number" step="1" value="@Model.firstNumber" />
+    <input name="secondNumber" type="number" step="1"  value="@Model.secondNumber"/>
+    <input type="submit" value="Submit" />
+</form>
+
+@if (Model.ResultSet == true)
+{
+    <output>@Model.Result</output>
+}
+
+@section Scripts {
+    <a href="https://www.yahoo.co.in/">Yahoo</a>
+<h2>This is my section</h2>
+    <p>Hello this is harpreet singh , a full time student in cambrian college sudbury. My program is mobile application development. In which i am leaarning ios , android , c# , sql , java and system analysis</p>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+}
+
+@section NavItems {
+    <li class="nav-item">
+        <a class="nav-link text-dark" asp-area="" asp-page="/Error">Error</a>
+    </li>
+
+}

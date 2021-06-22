@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="utf-8" />
@@ -18,7 +18,7 @@
             <script src="~/js/site.js" asp-append-version="true"></script>
         }
 
-       
+
 
         <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
             <div class="container">
@@ -36,9 +36,11 @@
                             <a class="nav-link text-dark" asp-area="" asp-page="/Privacy">Privacy</a>
                         </li>
                         @await RenderSectionAsync("NavItems", required: false)
+
                         <li class="nav-item">
                             <a class="nav-link text-dark" asp-page="/Intro">RazorPage(Intro)</a>
                         </li>
+
                     </ul>
                 </div>
             </div>
@@ -61,5 +63,6 @@
     <script src="~/js/site.js" asp-append-version="true"></script>
 
     @await RenderSectionAsync("Scripts", required: false)
+    @await RenderSectionAsync("mycambrian", required: false)
 </body>
 </html>

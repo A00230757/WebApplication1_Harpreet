@@ -1,7 +1,7 @@
-﻿@page
+@page
 @model WebApplication1_Harpreet.Pages.IntroModel
 @{
-    ViewData["Title"] = "My Razor Page ";
+    ViewData["Title"] = "Harpreet's Razor Page ";
 }
 <div class="text-center">
     <h1 class="display-4">Welcome</h1>
@@ -14,7 +14,7 @@
 
 <form method="get">
     <input name="firstNumber" type="number" step="1" value="@Model.firstNumber" />
-    <input name="secondNumber" type="number" step="1"  value="@Model.secondNumber"/>
+    <input name="secondNumber" type="number" step="1" value="@Model.secondNumber" />
     <input type="submit" value="Submit" />
 </form>
 
@@ -23,19 +23,15 @@
     <output>@Model.Result</output>
 }
 
-@section Scripts {
-    <a href="https://www.yahoo.co.in/">Yahoo</a>
-<h2>This is my section</h2>
+
+
+@section mycambrian {
+    <a href="https://mycambrian.cambriancollege.ca/">Cambrian Login</a>
+    <h2>This is my section</h2>
     <p>Hello this is harpreet singh , a full time student in cambrian college sudbury. My program is mobile application development. In which i am leaarning ios , android , c# , sql , java and system analysis</p>
-    <script src="~/js/site.js" asp-append-version="true"></script>
-    <script src="~/js/site.js" asp-append-version="true"></script>
-    <script src="~/js/site.js" asp-append-version="true"></script>
-    <script src="~/js/site.js" asp-append-version="true"></script>
 }
 
-@section NavItems {
-    <li class="nav-item">
-        <a class="nav-link text-dark" asp-area="" asp-page="/Error">Error</a>
-    </li>
 
-}
+
+
+
